@@ -1,50 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.utl.dsm.zarape.model;
 
 public class Empleado {
     private int idEmpleado;
-    private Sucursal sucursal;
-    private Persona persona;
     private Usuario usuario;
-    private int activo;
+    private Persona persona;
+    private int idSucursal;
+    private String nombreSucursal; // Nombre de la sucursal asociada
 
     // Constructor
-    public Empleado(int idEmpleado, Sucursal sucursal, Persona persona, Usuario usuario, int activo) {
+    public Empleado(int idEmpleado, Usuario usuario, Persona persona, int idSucursal, String nombreSucursal) {
         this.idEmpleado = idEmpleado;
-        this.sucursal = sucursal;
-        this.persona = persona;
         this.usuario = usuario;
-        this.activo = activo;
+        this.persona = persona;
+        this.idSucursal = idSucursal;
+        this.nombreSucursal = nombreSucursal;
     }
 
-    // Getters y Setters
-    // (Implementación de todos los getters y setters)
-
+    // Getters y setters
     public int getIdEmpleado() {
         return idEmpleado;
     }
 
     public void setIdEmpleado(int idEmpleado) {
         this.idEmpleado = idEmpleado;
-    }
-
-    public Sucursal getSucursal() {
-        return sucursal;
-    }
-
-    public void setSucursal(Sucursal sucursal) {
-        this.sucursal = sucursal;
-    }
-
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public void setPersona(Persona persona) {
-        this.persona = persona;
     }
 
     public Usuario getUsuario() {
@@ -55,12 +33,27 @@ public class Empleado {
         this.usuario = usuario;
     }
 
-    public int getActivo() {
-        return activo;
+    public Persona getPersona() {
+        return persona;
     }
 
-    public void setActivo(int activo) {
-        this.activo = activo;
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
-    
+
+    public int getIdSucursal() {
+        return idSucursal;
+    }
+
+    public void setIdSucursal(int idSucursal) {
+        this.idSucursal = idSucursal;
+    }
+
+    public String getNombreSucursal() {
+        return nombreSucursal;
+    }
+
+    public void setNombreSucursal(String nombreSucursal) {
+        this.nombreSucursal = nombreSucursal;
+    }
 }

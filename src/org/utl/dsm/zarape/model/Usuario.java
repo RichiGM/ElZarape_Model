@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.utl.dsm.zarape.model;
 
 public class Usuario {
@@ -18,9 +14,7 @@ public class Usuario {
         this.activo = activo;
     }
 
-    // Getters y Setters
-    // (Implementación de todos los getters y setters)
-
+    // Getters y setters
     public int getIdUsuario() {
         return idUsuario;
     }
@@ -52,5 +46,4 @@ public class Usuario {
     public void setActivo(int activo) {
         this.activo = activo;
     }
-    
 }

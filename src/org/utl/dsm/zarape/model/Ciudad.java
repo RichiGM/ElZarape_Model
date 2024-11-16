@@ -1,15 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.utl.dsm.zarape.model;
 
 public class Ciudad {
     private int idCiudad;
     private String nombre;
-    private Estado estado;  // Objeto dentro de objeto
+    private Estado estado; // Relación con Estado
 
-    // Constructor
+    // Constructor completo
     public Ciudad(int idCiudad, String nombre, Estado estado) {
         this.idCiudad = idCiudad;
         this.nombre = nombre;
@@ -41,4 +37,3 @@ public class Ciudad {
         this.estado = estado;
     }
 }
-

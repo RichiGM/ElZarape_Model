@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.utl.dsm.zarape.model;
 
 public class Persona {
@@ -9,20 +5,20 @@ public class Persona {
     private String nombre;
     private String apellidos;
     private String telefono;
-    private Ciudad ciudad;
+    private int idCiudad;
+    private String nombreCiudad; // Nombre de la ciudad asociada
 
     // Constructor
-    public Persona(int idPersona, String nombre, String apellidos, String telefono, Ciudad ciudad) {
+    public Persona(int idPersona, String nombre, String apellidos, String telefono, int idCiudad, String nombreCiudad) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.telefono = telefono;
-        this.ciudad = ciudad;
+        this.idCiudad = idCiudad;
+        this.nombreCiudad = nombreCiudad;
     }
 
-    // Getters y Setters
-    // (Implementación de todos los getters y setters)
-
+    // Getters y setters
     public int getIdPersona() {
         return idPersona;
     }
@@ -55,13 +51,19 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public Ciudad getCiudad() {
-        return ciudad;
+    public int getIdCiudad() {
+        return idCiudad;
     }
 
-    public void setCiudad(Ciudad ciudad) {
-        this.ciudad = ciudad;
+    public void setIdCiudad(int idCiudad) {
+        this.idCiudad = idCiudad;
     }
-    
+
+    public String getNombreCiudad() {
+        return nombreCiudad;
+    }
+
+    public void setNombreCiudad(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
+    }
 }
-
