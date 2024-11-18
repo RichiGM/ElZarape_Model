@@ -4,8 +4,8 @@
  */
 package org.utl.dsm.zarape.model;
 
-
 public class Sucursal {
+
     private int idSucursal;
     private String nombre;
     private String latitud;
@@ -17,12 +17,13 @@ public class Sucursal {
     private String numCalle;
     private String colonia;
     private Ciudad ciudad;
+    private Estado estado; // Agregar el atributo Estado
     private int activo;
 
     // Constructor
     public Sucursal(int idSucursal, String nombre, String latitud, String longitud, String foto,
-                    String urlWeb, String horarios, String calle, String numCalle, String colonia,
-                    Ciudad ciudad, int activo) {
+            String urlWeb, String horarios, String calle, String numCalle, String colonia,
+            Ciudad ciudad, Estado estado, int activo) {
         this.idSucursal = idSucursal;
         this.nombre = nombre;
         this.latitud = latitud;
@@ -34,11 +35,12 @@ public class Sucursal {
         this.numCalle = numCalle;
         this.colonia = colonia;
         this.ciudad = ciudad;
+        this.estado = estado;
         this.activo = activo;
     }
 
-    // Getters y Setters
-    // (Implementación de todos los getters y setters)
+    public Sucursal() {
+    }
 
     public int getIdSucursal() {
         return idSucursal;
@@ -128,6 +130,14 @@ public class Sucursal {
         this.ciudad = ciudad;
     }
 
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
     public int getActivo() {
         return activo;
     }
@@ -135,5 +145,5 @@ public class Sucursal {
     public void setActivo(int activo) {
         this.activo = activo;
     }
-    
+
 }

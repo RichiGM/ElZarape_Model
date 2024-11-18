@@ -3,16 +3,18 @@ package org.utl.dsm.zarape.model;
 public class Ciudad {
     private int idCiudad;
     private String nombre;
-    private Estado estado; // Relación con Estado
+    private int idEstado;
 
-    // Constructor completo
-    public Ciudad(int idCiudad, String nombre, Estado estado) {
+    public Ciudad(int idCiudad, String nombre, int idEstado) {
         this.idCiudad = idCiudad;
         this.nombre = nombre;
-        this.estado = estado;
+        this.idEstado = idEstado;
     }
 
-    // Getters y Setters
+    public Ciudad() {
+        
+    }
+
     public int getIdCiudad() {
         return idCiudad;
     }
@@ -29,11 +31,13 @@ public class Ciudad {
         this.nombre = nombre;
     }
 
-    public Estado getEstado() {
-        return estado;
+    public int getIdEstado() {
+        return idEstado;
     }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
+    public void setIdEstado(int idEstado) {
+        this.idEstado = idEstado;
     }
+
+    
 }

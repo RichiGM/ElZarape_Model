@@ -8,13 +8,15 @@ public class Estado {
     private int idEstado;
     private String nombre;
 
-    // Constructor
     public Estado(int idEstado, String nombre) {
         this.idEstado = idEstado;
         this.nombre = nombre;
     }
 
-    // Getters y Setters
+    public Estado() {
+       
+    }
+
     public int getIdEstado() {
         return idEstado;
     }
@@ -30,4 +32,11 @@ public class Estado {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    
+    
 }
+
+
+   
+
