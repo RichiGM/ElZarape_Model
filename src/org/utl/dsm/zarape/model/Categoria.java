@@ -18,6 +18,14 @@ public class Categoria {
         this.activo = activo;
     }
 
+    public Categoria(String descripcion, String tipo) {
+        this.descripcion = descripcion;
+        this.tipo = tipo;
+    }
+
+    
+    
+
     // Getters y Setters
     // (Implementación de todos los getters y setters)
 
