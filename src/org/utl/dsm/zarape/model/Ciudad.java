@@ -4,15 +4,16 @@ public class Ciudad {
     private int idCiudad;
     private String nombre;
     private int idEstado;
+    private String nombreEstado;
 
-    public Ciudad(int idCiudad, String nombre, int idEstado) {
+    public Ciudad(int idCiudad, String nombre, int idEstado, String nombreEstado) {
         this.idCiudad = idCiudad;
         this.nombre = nombre;
         this.idEstado = idEstado;
+        this.nombreEstado = nombreEstado;
     }
 
     public Ciudad() {
-        
     }
 
     public int getIdCiudad() {
@@ -38,6 +39,16 @@ public class Ciudad {
     public void setIdEstado(int idEstado) {
         this.idEstado = idEstado;
     }
+
+    public String getNombreEstado() {
+        return nombreEstado;
+    }
+
+    public void setNombreEstado(String nombreEstado) {
+        this.nombreEstado = nombreEstado;
+    }
+
+   
 
     
 }
