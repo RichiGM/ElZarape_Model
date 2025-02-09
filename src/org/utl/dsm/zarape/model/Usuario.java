@@ -5,8 +5,22 @@ public class Usuario {
     private String nombre;
     private String contrasenia;
     private int activo;
+    private int rol;
+    private String lastToken;
+    private String dateLastToken;
 
     // Constructor
+    
+    public Usuario(int idUsuario, String nombre, String contrasenia, int activo, int rol, String lastToken, String dateLastToken) {
+        this.idUsuario = idUsuario;
+        this.nombre = nombre;
+        this.contrasenia = contrasenia;
+        this.activo = activo;
+        this.rol = rol;
+        this.lastToken = lastToken;
+        this.dateLastToken = dateLastToken;
+    }
+
     public Usuario(int idUsuario, String nombre, String contrasenia, int activo) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
@@ -45,5 +59,29 @@ public class Usuario {
 
     public void setActivo(int activo) {
         this.activo = activo;
+    }
+
+    public int getRol() {
+        return rol;
+    }
+
+    public void setRol(int rol) {
+        this.rol = rol;
+    }
+
+    public String getLastToken() {
+        return lastToken;
+    }
+
+    public void setLastToken(String lastToken) {
+        this.lastToken = lastToken;
+    }
+
+    public String getDateLastToken() {
+        return dateLastToken;
+    }
+
+    public void setDateLastToken(String dateLastToken) {
+        this.dateLastToken = dateLastToken;
     }
 }
