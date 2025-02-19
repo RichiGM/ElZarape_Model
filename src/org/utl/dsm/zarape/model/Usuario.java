@@ -5,6 +5,33 @@ public class Usuario {
     private String nombre;
     private String contrasenia;
     private int activo;
+    private int rol;
+    private String lastToken;
+    private String dateLastToken;
+
+    public int getRol() {
+        return rol;
+    }
+
+    public void setRol(int rol) {
+        this.rol = rol;
+    }
+
+    public String getLastToken() {
+        return lastToken;
+    }
+
+    public void setLastToken(String lastToken) {
+        this.lastToken = lastToken;
+    }
+
+    public String getDateLastToken() {
+        return dateLastToken;
+    }
+
+    public void setDateLastToken(String dateLastToken) {
+        this.dateLastToken = dateLastToken;
+    }
 
     // Constructor
     public Usuario(int idUsuario, String nombre, String contrasenia, int activo) {
