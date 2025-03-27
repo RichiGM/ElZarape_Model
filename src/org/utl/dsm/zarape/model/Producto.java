@@ -24,7 +24,11 @@ public class Producto {
         this.activo = activo;
     }
 
-    // Getters y Setters
+    public Producto() {
+    }
+
+    
+    
     // (Implementación de todos los getters y setters)
 
     public int getIdProducto() {
